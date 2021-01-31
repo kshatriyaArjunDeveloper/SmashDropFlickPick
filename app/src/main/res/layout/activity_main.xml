@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".MainActivity"
-        tools:ignore="ExtraText">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView_scoreCard"
@@ -25,7 +24,108 @@
             android:text="SCORECARD"
             android:textColor="@android:color/white"
             android:textSize="20sp"
-            app:fontFamily="@font/faster_one" />
+            app:fontFamily="@font/faster_one"
+            android:layout_marginBottom="32dp"/>
+
+        <LinearLayout
+            android:id="@+id/teamBService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="#546e7a"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_BE"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="B1"
+                android:textColor="#546e7a" />
+
+            <TextView
+                android:id="@+id/tv_BO"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="B2"
+                android:textColor="#546e7a" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/teamAService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:background="#546e7a"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_AO"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="A2"
+                android:textColor="#546e7a" />
+
+            <TextView
+                android:id="@+id/textView_AE"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="A1"
+                android:textColor="#546e7a" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_serviceStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="#819ca9"
+            android:gravity="center_vertical|center_horizontal"
+            android:lines="2"
+            android:padding="8dp"
+            android:text="A1 will serve the first service\nB1 will pick the first service.  "
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:fontFamily="@font/rubik" />
+
+        <TextView
+            android:id="@+id/textView_winningStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:text="Winning Status"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            app:fontFamily="@font/rubik" />
 
         <LinearLayout
             android:id="@+id/scoreCard"
@@ -124,121 +224,23 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/teamBService"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:background="#546e7a"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_BE"
-                android:layout_width="60dp"
-                android:layout_height="80dp"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="2dp"
-                android:layout_marginTop="4dp"
-                android:background="@android:color/white"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="B1"
-                android:textColor="#546e7a" />
-
-            <TextView
-                android:id="@+id/tv_BO"
-                android:layout_width="60dp"
-                android:layout_height="80dp"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="4dp"
-                android:layout_marginTop="4dp"
-                android:background="@android:color/white"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="B2"
-                android:textColor="#546e7a" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/teamAService"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_marginBottom="4dp"
-            android:background="#546e7a"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_AO"
-                android:layout_width="60dp"
-                android:layout_height="80dp"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginRight="2dp"
-                android:layout_marginTop="4dp"
-                android:background="@android:color/white"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="A2"
-                android:textColor="#546e7a" />
-
-            <TextView
-                android:id="@+id/textView_AE"
-                android:layout_width="60dp"
-                android:layout_height="80dp"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="4dp"
-                android:layout_marginTop="4dp"
-                android:background="@android:color/white"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="A1"
-                android:textColor="#546e7a" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView_serviceStats"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_marginTop="8dp"
-            android:background="#819ca9"
-            android:gravity="center_vertical|center_horizontal"
-            android:lines="2"
-            android:padding="8dp"
-            android:text="A1 will serve the first service\nB1 will pick the first service.  "
-            android:textAllCaps="true"
-            android:textColor="@android:color/white"
-            android:textSize="14sp"
-            app:fontFamily="@font/rubik" />
-
-        <TextView
-            android:id="@+id/textView_winningStats"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center_horizontal"
-            android:padding="8dp"
-            android:text="Winning Status"
-            android:textAllCaps="true"
-            android:textSize="14sp"
-            app:fontFamily="@font/rubik" />
-
         <Button
             android:id="@+id/button_newGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_marginBottom="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginTop="22dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
             android:background="#546e7a"
             android:fontFamily="@font/rubik_medium"
-            android:text="NEW GAME"
             android:onClick="newGame"
+            android:text="NEW GAME"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textSize="14sp" />
-        </LinearLayout>
+    </LinearLayout>
 </ScrollView>
 
 
